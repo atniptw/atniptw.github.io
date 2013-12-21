@@ -1,4 +1,4 @@
 atniptw.github.io
 =================
 
-Person static website
+Personal static website
