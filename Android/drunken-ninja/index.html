@@ -34,22 +34,34 @@
 
       <!-- Add anything here -->
       <ul class="list inset">
-        <li class="list-divider selectable" onclick="toggle_visibility('chapter1');">Chapter 1
+        <li class="list-item-multi-line selectable" onclick="toggle_visibility('chapter1');">
+        Chapter 1
+        <p>Variables, Expressions, and Integers</p>
             <ul class="list inset" id="chapter1" style="display:none;">
-                <li class="list-item-single-line selectable">Lesson 1<li>
-                <li class="list-item-single-line selectable">Lesson 2<li>
-                <li class="list-item-single-line selectable">Lesson 3<li>
+                <li class="list-item-multi-line selectable">
+                Lesson 1
+                <p>Expressions and Variables</p>
+                <li>
+                <li class="list-item-multi-line selectable">
+                Lesson 2
+                <p>Powers and Exponents</p>
+                <li>
+                <li class="list-item-multi-line selectable">
+                Lesson 3
+                <p>Order of Operations</p>
+                <li>
             </ul>
         </li>
-      
-        <li class="list-divider selectable" onclick="toggle_visibility('chapter2');">Chapter 2
+
+        <li class="list-item-multi-line selectable" onclick="toggle_visibility('chapter2');">
+        Chapter 2
             <ul class="list inset" id="chapter2" style="display:none;">
                 <li class="list-item-single-line selectable">Lesson 1<li>
                 <li class="list-item-single-line selectable">Lesson 2<li>
                 <li class="list-item-single-line selectable">Lesson 3<li>
             </ul>
         </li>
-      
+
         <li class="list-divider selectable" onclick="toggle_visibility('chapter3');">Chapter 3
             <ul class="list inset" id="chapter3" style="display:none;">
                 <li class="list-item-single-line selectable">Lesson 1<li>
@@ -71,7 +83,7 @@
   <script src="../dist/fries.min.js"></script>
   <script src="js/fingerblast.js"></script>
   <script type="text/javascript">
-  
+
     function toggle_visibility(id) {
        var e = document.getElementById(id);
         e.style.display = ((e.style.display!='none') ? 'none' : 'block');
