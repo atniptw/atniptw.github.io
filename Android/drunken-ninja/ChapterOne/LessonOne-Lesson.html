@@ -45,7 +45,15 @@
       <p>Evaluate the expression when x = 2 and y =5.</p>
       <p>y-x</p>
       </br>
-      <p>boop</p>
+      <p>x = 2 and y = 5</p>
+      <p>y - x = 5 - 2</p>
+      </div>
+      
+      <div id="3" style="display:none;">
+      <p>Evaluate the expression when x = 2 and y =5.</p>
+      <p>y-x</p>
+      </br>
+      <p>y - x = 3</p>
       </div>
 
       <div id="Next" class="btn" onclick="toggle_visibility();">
@@ -68,12 +76,11 @@
     <script type="text/javascript">
     var page =1;
     function toggle_visibility() {
-       var e = document.getElementById(page);
        console.log(page);
+       var e = document.getElementById(page);
        e.style.display = 'none' ;
        e = document.getElementById(++page);
        e.style.display = 'block' ;
-       console.log(page);
     }
 
 </script>
